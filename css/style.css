@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}
+/* Navigation bar */
+#navbar{
+    /* border: 2px solid white; */
+    display: flex;
+    
+    justify-content: space-between;
+    position: sticky;
+    align-items: baseline;
+    flex-wrap: wrap;
+    top: 0;
+    
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(32, 32, 32);
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    border-radius: 100px;
+}
+/* menu and maneu-2 */
+#menu{
+    /* border: 2px solid yellow; */
+    margin: 5px;
+    width: 42rem;   
+    padding-left: 60px; 
+}
+#menu ul{
+    /* border: 2px solid white; */
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+#menu ul li{
+    list-style: none;
+    /* position: sticky; */
+}
+#menu ul li a{
+    font-family: 'Baloo Bhai 2', cursive;
+    text-decoration: none;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    margin: 0px 10px;
+}
+#menu ul li a:hover, #menu-2 a:hover{
+    /* border: 2px solid white; */
+    background-color: white;
+    color: black;
+    opacity: 0.5;
+    border-radius: 6px;
+}
+/* font-family: 'Roboto', sans-serif; */
+#menu-2{
+    /* justify-content: center; */
+    padding: 12px 5px;
+    margin-right: 23px;
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+#menu-2 li{
+    list-style: none;
+}
+#menu-2 li a{
+    padding: 2px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 8% 0%;
+    flex-wrap: wrap;
+    padding-top: 8vh;
+}
+/* #home::before{
+    content: "";
+    position: absolute;
+    background-image: url("../img/img.jpeg");
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+} */
+#home img{
+    width: 28%;
+    border-radius: 100%;
+    /* position: sticky; */
+    /* top: 0;
+    left: 0; */
+}
+#home div{
+    width: 53%;
+    /* border: 2px solid white; */
+    margin-left: 50px;
+}
+#home div h1{
+    padding: 15px;
+}
+#home div h3{
+    padding: 15px;
+}
+#home div p{
+    padding: 15px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* About section */
+#about-me{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 8% 0%;
+    flex-wrap: wrap;
+    padding-top: 10%;
+}
+#about-me img{
+    width: 28%;
+    border-radius: 100%;
+}
+#about-me div{
+    width: 53%;
+}
+#about-me div a{
+    text-decoration: none;
+}
+#about-me div h1{
+    padding: 15px;
+}
+#about-me div h3{
+    padding: 15px;
+}
+#about-me div p{
+    padding: 15px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* Worck section */
+#work{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+#work div ul{
+    margin: 2%;
+    border: 2px solid white;
+    margin-top: 80px;
+    border-radius: 10px;
+    /* display: block; */
+    width: 100%;
+}
+#work div li{
+    list-style: none;
+    padding: 5px;
+}
+#work div li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+#work div li:hover{
+    background-color: white;
+    color: black;
+    opacity: 0.5;
+    transition: all 0.5s ease 0s;
+}
+
+/* Contact */
+#contact{
+    display: flex;
+    justify-content: center;
+}
+#form{
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 563px;
+}
+#contact form{
+    width: 100%;
+}
+#form .form-group{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+#contact input,
+#contact textarea{
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 5px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    border: 2px solid rgb(151, 228, 151);
+}
+#contact .btn{
+    display: block;
+    margin: 15px auto;
+}
+
+/* footer */
+footer{
+    background-color: rgb(41, 39, 39);
+    width: 100%;
+}
+footer p{
+    padding: 4px;
+}
+
+/* Utiliti classes */
+.m-font{
+    color: white;
+    font-size: 1.2rem;
+}
+.h-primary{
+    color: white;
+    font-size: 3.5rem;
+    line-height: 0.8;
+}
+.h-secondary{
+    color: white;
+    font-size: 1.5rem;
+}
+.center{
+    text-align: center;
+}
+.btn{
+    padding: 6px 20px;
+    border: 3px solid white;
+    color: white;
+    background-color: transparent;
+    margin: 17px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(167, 231, 161);
+    color: black;
+    transition: all 0.5s ease 0s;
+}
